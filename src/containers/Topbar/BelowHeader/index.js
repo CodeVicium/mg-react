@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import {Button, Dropdown, Icon, Layout, Menu, message, Popover, Select} from 'antd';
+import { DownOutlined } from '@ant-design/icons';
+import { Button, Dropdown, Layout, Menu, message, Popover, Select } from 'antd';
 import {useDispatch, useSelector} from "react-redux";
 import CustomScrollbars from "util/CustomScrollbars";
 import languageData from "../languageData";
@@ -109,7 +110,7 @@ const BelowHeader = () => {
                 <Popover overlayClassName="gx-popover-horizantal" placement="bottomRight" content={
                   <div className="gx-d-flex"><Dropdown overlay={menu}>
                     <Button>
-                      Category <Icon type="down"/>
+                      Category <DownOutlined />
                     </Button>
                   </Dropdown>
                     <SearchBox styleName="gx-popover-search-bar"
