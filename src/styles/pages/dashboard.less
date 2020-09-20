@@ -1,3 +1,283 @@
+
+html {
+  font-size: 16px;
+}
+.social-bar {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+}
+.fab {
+  color: white;
+  text-decoration: none !important;
+  padding: 0.9rem;
+  display: flex;
+  transition: all 0.5s;
+  border-radius: 10px 0px 0px 10px;
+  width: 3rem;
+}
+.fa-facebook-f {
+  background: #2e406e;
+}
+
+.fa-instagram {
+  background: #c13584;
+}
+.fa-whatsapp {
+  background: #25d366;
+}
+#menu {
+  width: 100vw;
+}
+.nav ul li {
+  margin-left: 10rem;
+}
+.nav ul {
+  text-align: center;
+}
+.nav li a {
+  color: #767677 !important;
+  transition: all 0.4s;
+}
+.nav li a:hover {
+  transform: scale(1.3);
+  background-color: rgba(209, 209, 209, 0.3);
+  color: #58585f;
+  border-radius: 15px;
+}
+.icon:first-child {
+  border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+  border-radius: 0 0 0 1rem;
+}
+
+.fab:hover {
+  color: white;
+  padding-right: 4rem;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
+}
+.imgLogoCont {
+  max-width: 9rem;
+  transition: max-width 1.2s;
+}
+.imgLogoCont2 {
+  max-width: 5rem;
+  transition: max-width 1.2s;
+}
+.menuOnScroll {
+  background-color: whitesmoke;
+}
+
+#home {
+  margin-bottom: 10vh;
+  width: 60vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../../assets/images/inicio.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.discriptionHome {
+  width: 40vw;
+  float: right;
+  height: 100vh;
+}
+
+#contact {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 7%;
+  background-image: url("../../assets/images/boliche.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+.services {
+  text-align: center;
+  margin: auto;
+  width: 80vw;
+  height: 80vh;
+  background-repeat: no-repeat;
+  border-radius: 20px !important;
+  background-size: cover;
+  background-attachment: unset;
+  box-shadow: rgba(117, 85, 85, 0.7) 11px 16px 31px 6px;
+  transition: all 0.5s;
+}
+/* .services:hover {
+  transform: scale(1.2);
+} */
+.serviceCont {
+  padding-bottom: 15vh;
+  padding-top: 15vh;
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: 700;
+}
+.backwithcolor{
+  color: whitesmoke;
+  border-radius: 15px;
+  background-color: rgba(209, 209, 209, 0.3);
+  margin: auto;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 80vw;
+  height: 80vh;
+}
+.fotoCabina {
+  background-image: url("../../assets/images/fotocabina.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.foto-filmacion {
+  background-image: url("../../assets/images/rubia.jpeg");
+  background-position: right;
+}
+.sonido-iluminacion {
+  background-image: url("../../assets/images/sonido-iluminacion.jpeg");
+}
+
+#home > div {
+  padding-top: 9rem !important;
+  text-align: center;
+}
+.title {
+  color: white;
+  font-size: 5rem;
+  font-weight: 2000px;
+}
+footer {
+  width: 100vw;
+  height: 4.2vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.contactForm {
+  color: whitesmoke;
+  border-radius: 15px;
+  background-color: rgba(209, 209, 209, 0.3);
+  margin: auto;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 45vw;
+  height: 58vh;
+}
+.titleContact {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 1.5rem !important;
+  color: whitesmoke;
+}
+.titleMg {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600px;
+  margin-top: 28vh;
+  color: #767677;
+  transition-duration: 0.4s;
+}
+.titleMg:hover {
+  transform: scale(1.4);
+}
+.history {
+  text-align: center;
+  font-size: 18px;
+  color: #767677;
+}
+.history > p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#cards {
+  padding:4.5rem;
+  text-align: center;
+  width: 90vw;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+#cards .row {
+  margin: auto !important;
+}
+.card-messages {
+  box-shadow: 7px 7px 17px -2px #504f4f;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
+.btn-delete {
+  z-index: 1;
+  float: right;
+  margin-top: 5px;
+  width: 2.4rem;
+  border-radius: 50% !important;
+  margin-left: 90%;
+  transform: translateY(1.5rem);
+}
+/* mediaqueris */
+@media screen and (max-width: 680px) {
+  #home {
+    display: none;
+  }
+  .services {
+    width: 90vw;
+    margin: auto 18px 18px auto;
+    background-attachment: fixed;
+  }
+  .services:hover {
+    transform: unset;
+  }
+  .discriptionHome {
+    background-image: url("../../assets/images/inicio.jpeg");
+    background-attachment: fixed;
+    background-position: top;
+    width: 100vw;
+    height: 100vh;
+  }
+  .history {
+    color: white;
+  }
+  .titleMg {
+    color: white;
+  }
+  .foto-filmacion {
+    background-position: bottom;
+  }
+  .social-bar {
+    display: none;
+  }
+  .nav ul li {
+    margin-left: unset;
+  }
+  #menu > a {
+    padding-left: 1px !important;
+    margin: 0em;
+  }
+  .imgLogoCont {
+    max-width: 4rem;
+    padding-left: 0 !important;
+  }
+  .titleContact {
+    white-space: nowrap;
+    font-size: 26px;
+  }
+  .contactForm {
+    width: 100vw;
+    height: 98vh;
+  }
+}
+
 /*Dashboard Styles*/
 .ant-list-item-meta {
   flex-wrap: wrap;
