@@ -80,7 +80,7 @@ const App = (props) => {
     document.body.classList.add('dark-theme');
   }
   if (location.pathname === '/') {
-    return (<Redirect to={'/sample'}/>);
+    return (<Redirect to={'/Inicio'}/>);
   }
 
   setLayoutType(layoutType);
