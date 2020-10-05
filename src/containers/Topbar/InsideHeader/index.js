@@ -24,19 +24,15 @@ const InsideHeader = () => {
 
   const dispatch = useDispatch();
 
-  const [searchText, setSearchText] = useState('');
   const navCollapsed = useSelector(({settings}) => settings.navCollapsed);
-  const updateSearchChatUser = (evt) => {
-    setSearchText(evt.target.value)
-  };
   return (
     <div className="gx-header-horizontal gx-header-horizontal-dark gx-inside-header-horizontal">
       <Header
         className="gx-header-horizontal-main">
         <div className="gx-container">
           <div className="gx-header-horizontal-main-flex">
-            <div className="gx-d-block gx-d-lg-none gx-linebar gx-mr-xs-3 6e">
-              <i className="gx-icon-btn icon icon-menu"
+            <div className="gx-d-block gx-d-lg-none gx-linebar gx-mr-xs-3 6e" style={{ color:"white",borderRadius:"50%"}}>
+              <i className="gx-icon-btn icon icon-bars"
                  onClick={() => {
                    dispatch(toggleCollapsedSideNav(!navCollapsed));
                  }}
