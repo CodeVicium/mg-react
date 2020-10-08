@@ -4,7 +4,7 @@ const SamplePage = () => {
    
   return (
     <div>
-      <section style={{display: "flex"}}>
+      <div style={{display: "flex"}}>
          <div class="row">
             <div class="col-12 col-sm-6">
                <div id="home">
@@ -12,7 +12,8 @@ const SamplePage = () => {
             </div>
             <div class="col-12 col-sm-6">
                <div class="card discriptionHome">
-                  <h1 class="card-title titleMg">MgEventos</h1>
+                  <h1 class="card-title titleMg">MG</h1>
+                  <h1 class="card-title subtitleMG">Eventos</h1>
                   <div class="card-body history">
                      <p>Una empresa familiar con mas de 10años de experiencia profesional</p>
                      <p>Siempre realizando nuestro trabajo con la mayor devocion para que tu noche sea perfecta</p>
@@ -21,7 +22,7 @@ const SamplePage = () => {
                </div>
             </div>
          </div>
-      </section>
+      </div>
     </div>
   );
 };

@@ -46,16 +46,51 @@
 .tituloServicio {
   text-align: center;
   h1 {
-    color: @grey-7 !important;
+    color: #000000 !important;
   }
 }
-.descripcion{
+.descripcion {
   font-weight: 400;
 }
-.carrouselPhotos{
+.carrouselPhotos {
   margin-top: 3.5rem;
-  left:23%;
+  left: 8%;
+  max-width: 60vw;
   @media screen and (max-width: @screen-xs-max) {
-    left :0;
+    left: 0;
+    div img {
+      max-width: 85vw;
+    }
   }
+}
+.patternMessage {
+  display: flex;
+  flex-direction: column;
+}
+.cardMessage {
+  width: 60vw !important;
+  padding: 10px;
+  @media screen and (max-width: @screen-xs-max) {
+    max-width: none;
+  }
+}
+.titleMg {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600px;
+  margin-top: 28vh;
+  color: #000000;
+  transition-duration: 0.4s;
+}
+.subtitleMG {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600px;
+  color: #000000;
+  @media screen and (max-width: @screen-xs-max) {
+    color: #ffffff;
+  }
+}
+.btnDelete {
+  float: right;
 }
